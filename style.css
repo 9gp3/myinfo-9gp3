@@ -1,0 +1,133 @@
+
+input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+.check {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  background: #acacac;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: ease-in 0.5s;
+  transform: translate(730px,10px);
+
+}
+input[type="checkbox"]:checked ~ .check {
+  background: #8e121273;
+}
+.check::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #fff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+input[type="checkbox"]:checked ~ .check::before {
+  transform: translateX(-50px);
+}
+.check::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #b51111;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+  transform: translateX(40px);
+}
+input[type="checkbox"]:checked ~ .check::after {
+  transform: translateX(0px);
+}
+#instagram {
+  color: #ffffff;
+  background-color: #be328b;
+  border-color: #be328b;
+  box-shadow: #53113b 4px 4px 0px;
+}
+#telegram {
+  background-color: #269dd9;
+  border-color: #269dd9;
+  color: #ffffff;
+  box-shadow: #094c66 4px 4px 0px;
+  align-items: center;
+}
+#page-telegram {
+  border-color: #ffffff;
+  color: #269dd9;
+  box-shadow: #031217 4px 4px 0px;
+}
+#snapchat {
+  border-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  background-color: #dae035;
+  box-shadow: #a09b06 4px 4px 0px;
+}
+
+body {
+  padding: 25px;
+  background-color: #252525;
+  color: rgb(241, 241, 241);
+}
+.dark-mode {
+  background-color: rgb(241, 241, 241);
+  color: #252525;
+}
+.info {
+  font-family: fantasy;
+  width: 175px;
+  height: 35px;
+  display: block;
+  margin: 0 0 10px 10px;
+  border-radius: 10px;
+  transition: transform 200ms, box-shadow 200ms;
+  position: relative;
+  transform: translate(-150px, +20px);
+  left: 50%;  
+  
+}
+.info:hover {
+  font-family: fantasy;
+  font-size: 16px;
+  width: 200px;
+  height: 55px;
+}
+
+.info:active {
+  transform: translatey(23px)translateX(-145px) ;
+}
+
+.card {
+  color: #fff;
+  font-size: xx-large;  
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
+  font-weight:900;
+  width: 190px;
+  height: 70px;
+  margin: auto;
+  background-color: #212121;
+  border-radius: 1px;
+  border: #212121 2px solid;
+  transition: all 0.4s ease-in;
+  box-shadow: 4px 4px 4px #00000040;
+  position: relative;
+  top: 30px;
+  /* transform: translate(-150px, 40px); */
+  left: -3.4%;
+}
+
+.card:hover {
+  transform: translateY(10px);
+  border: #f2295bf0 2px solid;
+  border-radius: 40px 0 40px 0;
+}
