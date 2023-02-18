@@ -1,3 +1,11 @@
+.info {
+  font-family: monospace;
+  margin: 0 0 10px 10px;
+  display: block;
+  width: 175px;
+  height: 50px;
+  border-radius: 10px 10px 10px 10px;
+}
 
 input[type="checkbox"] {
   visibility: hidden;
@@ -5,7 +13,7 @@ input[type="checkbox"] {
 }
 .check {
   position: relative;
-  display: block;
+  display: inline-block;
   width: 40px;
   height: 20px;
   background: #acacac;
@@ -13,8 +21,7 @@ input[type="checkbox"] {
   border-radius: 20px;
   overflow: hidden;
   transition: ease-in 0.5s;
-  transform: translate(730px,10px);
-
+  margin-bottom: 10px;
 }
 input[type="checkbox"]:checked ~ .check {
   background: #8e121273;
@@ -48,6 +55,37 @@ input[type="checkbox"]:checked ~ .check::before {
 input[type="checkbox"]:checked ~ .check::after {
   transform: translateX(0px);
 }
+body {
+  margin: 20px;
+  padding: 0;
+  background-color: #252525;
+  color: rgb(241, 241, 241);
+}
+.dark-mode {
+  background-color: rgb(241, 241, 241);
+  color: #252525;
+}
+.card {
+  color: #fff;
+  font-size: xx-large;
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+  font-weight: 900;
+  width: 190px;
+  height: 70px;
+  margin: auto;
+  background-color: #212121;
+  border-radius: 1px;
+  border: #212121 2px solid;
+  transition: all 0.4s ease-in;
+  box-shadow: 4px 4px 4px #00000040;
+  display: block;
+}
+.card:hover {
+  transform: translateY(10px);
+  border: #f2295bf0 2px solid;
+  border-radius: 40px 0 40px 0;
+}
 #instagram {
   color: #ffffff;
   background-color: #be328b;
@@ -73,61 +111,21 @@ input[type="checkbox"]:checked ~ .check::after {
   box-shadow: #a09b06 4px 4px 0px;
 }
 
-body {
-  padding: 25px;
-  background-color: #252525;
-  color: rgb(241, 241, 241);
-}
-.dark-mode {
-  background-color: rgb(241, 241, 241);
-  color: #252525;
-}
-.info {
-  font-family: fantasy;
-  width: 175px;
-  height: 35px;
-  display: block;
-  margin: 0 0 10px 10px;
-  border-radius: 10px;
-  transition: transform 200ms, box-shadow 200ms;
-  position: relative;
-  transform: translate(-150px, +20px);
-  left: 50%;  
-  
-}
 .info:hover {
-  font-family: fantasy;
+  font-family: monospace;
   font-size: 16px;
   width: 200px;
   height: 55px;
 }
 
 .info:active {
-  transform: translatey(23px)translateX(-145px) ;
+  transform: translate(6px, 3px);
 }
-
-.card {
-  color: #fff;
-  font-size: xx-large;  
-  text-align: center;
-  font-family: 'Cairo', sans-serif;
-  font-weight:900;
-  width: 190px;
-  height: 70px;
-  margin: auto;
-  background-color: #212121;
-  border-radius: 1px;
-  border: #212121 2px solid;
-  transition: all 0.4s ease-in;
-  box-shadow: 4px 4px 4px #00000040;
-  position: relative;
-  top: 30px;
-  /* transform: translate(-150px, 40px); */
-  left: -3.4%;
-}
-
-.card:hover {
-  transform: translateY(10px);
-  border: #f2295bf0 2px solid;
-  border-radius: 40px 0 40px 0;
+.move {
+  margin-top: 5px;
+  color: #007acc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: xx-large;
+  font:bolder;
 }
